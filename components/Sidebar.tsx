@@ -46,7 +46,7 @@ function DesktopSidebar() {
         <Logo />
       </div>
       <div className="p-2"></div>
-      <div className="flex flex-col p-2 ">
+      <div className="flex flex-col p-2 gap-2">
         {routes.map((route) => (
           <Link
             key={route.href}
@@ -88,7 +88,7 @@ export function MobileSidebar() {
             side={"left"}
           >
             <Logo />
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-2">
               {routes.map((route) => (
                 <Link
                   key={route.href}
